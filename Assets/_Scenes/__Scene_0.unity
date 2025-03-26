@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e58b265a06034356b13ba5ddb7c9c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 50
   rollMult: -45
   pitchMult: 30
   projectilePrefab: {fileID: 8884485313326729009, guid: 93cdb1254cc5842aeb5402d7b9f73a99, type: 3}
@@ -761,6 +761,16 @@ MonoBehaviour:
     damageOnHit: 0
     damagePerSec: 0
     delayBetweenShots: 0
+    velocity: 50
+  - type: 7
+    letter: O
+    powerUpColor: {r: 1, g: 1, b: 1, a: 1}
+    weaponModelPrefab: {fileID: 0}
+    projectilePrefab: {fileID: 8884485313326729009, guid: 53aa68189f20f4ab496fb208b3172a01, type: 3}
+    projectileColor: {r: 1, g: 0, b: 0, a: 1}
+    damageOnHit: 0
+    damagePerSec: 0
+    delayBetweenShots: 5
     velocity: 50
   powerUpFrequency: 01000000010000000200000006000000
 --- !u!114 &963194230

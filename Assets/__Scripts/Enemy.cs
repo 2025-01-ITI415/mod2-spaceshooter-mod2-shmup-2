@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Inscribed")]
     public float speed = 10f;   // The movement speed is 10m/s
+    public GameObject projectilePrefab;
     public float fireRate = 0.3f;  // Seconds/shot (Unused)
     public float health = 10;    // Damage needed to destroy this enemy
     public int score = 100;   // Points earned for destroying this
@@ -40,6 +41,15 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Move();
+
+        // Look in child transforms for weapon
+        Weapon weapon = GetComponentInChildren<Weapon>();
+
+        // If weapon is not null, do weapon firing code
+        if (weapon != null)
+        {
+            weapon.EnemyFire();
+        }
 
         // Check whether this Enemy has gone off the bottom of the screen
         if (bndCheck.LocIs(BoundsCheck.eScreenLocs.offDown))
