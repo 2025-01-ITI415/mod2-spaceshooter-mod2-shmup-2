@@ -80,6 +80,17 @@ public class Enemy : MonoBehaviour
                     // Destroy this Enemy
                     Destroy(this.gameObject);
                 }
+                health -= Main.GET_WEAPON_DEFINITION(p.type).damagePerSec;
+                if (health <= 0)
+                {
+                    if (!calledShipDestroyed)
+                    {
+                        calledShipDestroyed = true;
+                        Main.SHIP_DESTROYED(this);
+                    }
+                    // Destroy this Enemy
+                    Destroy(this.gameObject);
+                }
             }
             // Destroy the ProjectileHero regardless
             Destroy(otherGO);                                               // e

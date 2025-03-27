@@ -139,7 +139,70 @@ public class Weapon : MonoBehaviour
                 p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);
                 p.vel = p.transform.rotation * vel;
                 break;
+            case eWeaponType.laser:
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis( 0, Vector3.back);
+                p.vel = p.transform.rotation * vel;
 
+                break;
+            case eWeaponType.phaser:
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(0, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-1, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-2, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-3, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-4, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-5, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-6, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-8, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-9, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p.transform.rotation = Quaternion.AngleAxis(1, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(2, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(3, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(4, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(5, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(6, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(8, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(9, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                p = MakeProjectile();
+                p.transform.rotation = Quaternion.AngleAxis(10, Vector3.back);
+                p.vel = p.transform.rotation * vel;
+                break;
         }
     }
 
